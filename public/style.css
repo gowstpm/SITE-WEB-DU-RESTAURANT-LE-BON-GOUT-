@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: 'Oswald';
+  background-color: #555555;
+}
+
+.backgroundImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.ibb.co/3SN0J9X/image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #9B461E;
+  overflow: hidden;
+  padding: 0 2%;
+  outline: solid 0.1rem white;
+  height: 4rem;
+}
+
+.topnav .logo img {
+  height: 8.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-links a.active {
+  background-color: #555555;
+  color: white;
+}
+
+.restaurant-info {
+  display: flex;
+  align-items: center;
+  color: #f2f2f2;
+  font-size: 1rem;
+}
+
+.restaurant-info .location-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.promo-bar {
+  background-color: #9B461E;
+  color: white;
+  font-family: 'Oswald';
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem auto 0;
+  width: 100%;
+  font-size: 2.5rem;
+  outline: solid 0.1rem #ffffff;
+}
+
+.squares-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.square {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.34);
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.square-image {
+  width: 80%;
+  height: auto;
+  margin-top: 1rem;
+  outline: solid 0.1rem white;
+}
+
+.rectangle-bar {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.34);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.line-separator {
+  width: 80%;
+  height: 0.2rem;
+  background-color: white;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.reservation-content-left {
+  position: relative;
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.reservation-content-right{
+  position: relative;
+  width: 40rem;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-content-right-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  text-align: center;
+  z-index: 10;
+  outline: solid 0.1rem white;
+}
+
+.reservation-content-right-link:hover {
+  background-color: #9B461E;
+}
+
+.reservation-content-right-image {
+  width: 90%;
+  height: auto;
+  margin-top: 1rem;
+  outline: solid 0.1rem white;
+}
+
+
