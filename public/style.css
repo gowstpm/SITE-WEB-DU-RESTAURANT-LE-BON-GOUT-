@@ -60,6 +60,31 @@ body {
   color: white;
 }
 
+/* ------------- Footer Bar (Footer) ------------- */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #9B461E;
+  overflow: hidden;
+  padding: 0 2%;
+  outline: solid 0.1rem white;
+  height: 4rem;
+}
+
+.copyright {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.copyright h6 {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+}
+
 /* ------------- Restaurant Information ------------- */
 .restaurant-info {
   display: flex;
@@ -111,8 +136,14 @@ body {
 }
 
 .square-image {
-  width: 80%;
+  width: 100%;
   height: auto;
+  margin-top: 1rem;
+}
+
+.menu-square-image {
+  width: 80%;
+  height: 80%;
   margin-top: 1rem;
   outline: solid 0.1rem white;
 }
@@ -127,6 +158,19 @@ body {
   padding: 0.5rem;
   font-size: 1rem;
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.menu-rectangle-bar {
+  position: absolute;
+  bottom: 0;
+  background-color: #9B461E;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  outline: solid 0.1rem white;
 }
 
 /* Line Separator */
@@ -207,3 +251,66 @@ body {
   outline: solid 0.1rem white;
 }
 
+
+/* Menu Bottom Section */
+.menu-bottom-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+/* Menu Bottom Content Button */
+.menu-bottom-content-button {
+  position: relative;
+  width: 20rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.34);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Menu Bottom Link */
+.menu-bottom-content-link {
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  text-align: center;
+  outline: solid 0.1rem white;
+  transition: background-color 0.3s ease;
+}
+
+.menu-bottom-content-link:hover {
+  background-color: #9B461E;
+}
+
+/* Menu Bottom Image */
+.menu-bottom-content-image {
+  width: 20rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.menu-bottom-content-right-image {
+  width: 90%;
+  height: auto;
+  outline: solid 0.1rem white;
+}
