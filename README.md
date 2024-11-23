@@ -1,7 +1,3 @@
-Voici le texte mis à jour avec l'ajout des détails pour le **Jour 2** et le **Jour 3** :
-
----
-
 # 🚀 Bienvenue sur le site de **Le Bon Goût** !
 
 Bienvenue sur le site web de **Le Bon Goût** ! 👨‍💻 Je suis **Kilian Junker**, le développeur solo derrière la création de ce site. Passionné par le développement web et l'expérience utilisateur, j’ai conçu ce site pour refléter l'âme de notre restaurant de street food, tout en offrant une navigation fluide et agréable. Chaque page du site a été pensée et construite de manière autonome pour offrir une expérience optimale aux visiteurs.
