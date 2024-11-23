@@ -22,7 +22,7 @@ Bienvenue sur le site web de **Le Bon Goût** ! 👨‍💻 Je suis **Kilian Jun
 
 **Découvrez le site de Le Bon Goût et explorez nos plats en ligne en cliquant sur le lien ci-dessous :**
 
-<div style="text-align: center; padding: 10px; border: 2px solid #4CAF50; display: inline-block; border-radius: 8px;"> 👉 <a href="https://gowstpm.github.io/LeBonGoutStreetFood/" style="text-decoration: none; font-weight: bold; color: #4CAF50;">Accéder au site de Le Bon Goût et découvrir notre menu !</a> 👈 </div>
+<div style="text-align: center; padding: 10px; border: 2px solid #4CAF50; display: inline-block; border-radius: 8px;"> 👉 <a href="https://gowstpm.github.io/SITE-WEB-DU-RESTAURANT-LE-BON-GOUT-/" style="text-decoration: none; font-weight: bold; color: #4CAF50;">Accéder au site de Le Bon Goût et découvrir notre menu !</a> 👈 </div>
 
 Je suis très fier d’avoir développé ce site en utilisant des technologies web modernes comme **HTML**, **CSS**, et un peu de **JavaScript** pour rendre l’expérience utilisateur encore plus interactive. Chaque section a été pensée pour que vous puissiez naviguer facilement et découvrir **Le Bon Goût** sous son meilleur jour.
 
