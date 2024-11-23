@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation - LE BON GOÛT Kilian Junker</title>
+  <link rel="stylesheet" href="public/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="topnav">
+    <div class="logo">
+      <img src="https://i.ibb.co/GTDFJDM/t-l-chargement-7-1.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Acceuil</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html" class="active">Reservation</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="about.html">A propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="restaurant-info">
+      <span class="location-icon">📍</span>
+      <span>Notre Restaurant</span>
+    </div>
+  </header>
+
+  <div class="backgroundImage"></div>
+
+  <div class="text-bar">
+    <strong>RESERVER VOTRE TABLE</strong>
+  </div>
+
+    <form action="controller/reservation.php" method="POST" class="reservation-form">
+      <div class="form-flex">
+        <!-- Left Section (Name, Email, Number of People) -->
+        <div class="form-left">
+          <div class="form-group">
+            <label for="name">Nom complet:</label>
+            <input type="text" id="name" name="name" required class="input-field">
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse e-mail:</label>
+            <input type="email" id="email" name="email" required class="input-field">
+          </div>
+          <div class="form-group">
+            <label for="people">Nombre de personnes:</label>
+            <input type="number" id="people" name="people" min="1" required class="input-field">
+          </div>
+        </div>
+    
+        <!-- Separator Line -->
+        <div class="separator-line"></div>
+    
+        <!-- Right Section (Date Calendar) -->
+        <div class="form-right">
+          <div class="form-group">
+            <label for="date">Date de réservation:</label>
+            <input type="date" id="date" name="date" required class="input-field">
+          </div>
+        </div>
+      </div>
+    
+      <!-- Submit Button -->
+      <button type="submit" class="btn-submit">Valider votre commande</button>
+    </form>
+
+  <footer class="footer">
+    <div class="copyright">
+      <h6>@ Le Bon Goût Paris - 2024 | designed by Kilian Junker</h6>
+    </div>
+  </footer>
+
+</body>
+</html>

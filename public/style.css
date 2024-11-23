@@ -98,17 +98,68 @@ body {
   font-size: 1.2rem;
 }
 
-/* ------------- Promo Bar ------------- */
-.promo-bar {
+/* ------------- Bar ------------- */
+
+/* Text Bar */
+.text-bar {
   background-color: #9B461E;
   color: white;
   font-family: 'Oswald';
   text-align: center;
-  padding: 1rem;
-  margin: 2rem auto 0;
+  margin-top: 2rem;
   width: 100%;
   font-size: 2.5rem;
   outline: solid 0.1rem #ffffff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Bar Container*/
+.text-bar-container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.34);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Bar Text */
+.text-bar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #9B461E;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  outline: solid 0.1rem white;
+}
+
+/* Gallery Promo Image */
+.promo-image {
+  width: 80%;
+  height: auto;
+  margin-top: 1rem;
+  outline: solid 0.1rem white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* ------------- Content Sections ------------- */
@@ -118,8 +169,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin: 2rem auto;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .square {
@@ -133,17 +184,19 @@ body {
   justify-content: flex-start;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0rem 2rem 4rem 2rem;
 }
 
 .square-image {
   width: 100%;
   height: auto;
   margin-top: 1rem;
+  outline: solid 0.1rem white;
 }
 
 .menu-square-image {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   margin-top: 1rem;
   outline: solid 0.1rem white;
 }
@@ -168,7 +221,7 @@ body {
   text-align: center;
   width: 100%;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   outline: solid 0.1rem white;
 }
@@ -176,7 +229,7 @@ body {
 /* Line Separator */
 .line-separator {
   width: 80%;
-  height: 0.2rem;
+  height: 0.1rem;
   background-color: white;
   margin-top: 2rem;
   margin-left: auto;
@@ -264,11 +317,11 @@ body {
 /* Menu Bottom Content Button */
 .menu-bottom-content-button {
   position: relative;
-  width: 20rem;
-  height: 15rem;
+  width: 15rem;
+  height: 11rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: normal;
   justify-content: flex-start;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.34);
@@ -276,6 +329,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 1rem;
+  padding-bottom: 2rem;
   border-radius: 0.5rem;
 }
 
@@ -287,7 +341,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   padding: 0.8rem 1.5rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #9B461E;
   border-radius: 0.5rem;
   text-align: center;
   outline: solid 0.1rem white;
@@ -300,8 +354,8 @@ body {
 
 /* Menu Bottom Image */
 .menu-bottom-content-image {
-  width: 20rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,4 +367,205 @@ body {
   width: 90%;
   height: auto;
   outline: solid 0.1rem white;
+}
+
+/* Form Flex Layout */
+
+.reservation-form {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.reservation-form button{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-flex {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Left Section (Name, Email, Number of People) */
+.form-left {
+  width: 100%;
+}
+
+/* Right Section (Date Calendar) */
+.form-right {
+  width: 100%;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  margin-left: 0.4rem;
+  text-align: center;
+}
+
+.form-group input {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  margin-left: 0.4rem;
+  text-align: center;
+}
+
+label {
+  background-color: #9B461E;
+  color: white;
+  font-family: 'Oswald';
+  padding: 0.4rem;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: solid 0.1rem #ffffff;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.input-field:focus {
+  outline: solid 0.1rem #9B461E;
+}
+
+/* Separator Line */
+.separator-line {
+  width: 1px;
+  background-color: white;
+  margin: 0 1rem;
+}
+
+/* Submit Button */
+.btn-submit {
+  background-color: #9b461e85;
+  color: white;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-submit:hover {
+  background-color: #9B461E;
+}
+
+/* ------------- Gallery Styles ------------- */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+  gap: 1.5rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: solid 0.1rem #ffffff;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.about-container text {
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+  text-align: center;
+}
+
+/* Left Side of About */
+.about-content-left {
+  position: relative;
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+/* Right Side of About */
+.about-content-right {
+  position: relative;
+  width: 40rem;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: solid 0.1rem #ffffff;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .form-flex {
+    flex-direction: column;
+  }
+  .form-left, .form-right {
+    width: 100%;
+  }
 }
