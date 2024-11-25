@@ -32,8 +32,8 @@ body {
   height: 4rem;
 }
 
-.topnav .logo img {
-  height: 8.5rem;
+.logo img {
+  height: 4.5rem;
 }
 
 .nav-links {
@@ -51,13 +51,13 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .nav-links a.active {
-  background-color: #555555;
-  color: white;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 /* ------------- Footer Bar (Footer) ------------- */
@@ -298,7 +298,7 @@ body {
 /* Reservation Right Image */
 .reservation-content-right-image {
   width: 90%;
-  height: auto;
+  height: 90%;
   margin-top: 1rem;
   outline: solid 0.1rem white;
 }
@@ -586,12 +586,72 @@ label {
   outline: solid 0.1rem #ffffff;
 }
 
+@media (min-width: 1020px) {
+  .mobile-topnav {
+    display:  none;
+  }
+}
+
 /* Responsive Layout */
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .form-flex {
     flex-direction: column;
   }
   .form-left, .form-right {
     width: 100%;
   }
+
+  .topnav {
+    display: none;
+  }
+  .logo {
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Mobile Top Navigation */
+  .mobile-topnav {
+    overflow: hidden;
+    background-color: #9B461E;
+    position: relative;
+  }
+
+  .mobile-topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .mobile-icon {
+    display: block;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    right: 0;
+    top: 0;
+  }
+  
+  .mobile-icon img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .mobile-links {
+    display: none;
+  }
+
+  .mobile-links a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .mobile-links a.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
 }
+

@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/autoload.php'; // Adjust path to PHPMailer if necessary
+require '../vendor/autoload.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

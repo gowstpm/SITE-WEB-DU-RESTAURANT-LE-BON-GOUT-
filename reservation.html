@@ -9,23 +9,44 @@
 </head>
 <body>
 
-  <header class="topnav">
-    <div class="logo">
-      <img src="https://i.ibb.co/GTDFJDM/t-l-chargement-7-1.png" alt="Logo">
-    </div>
-    <div class="nav-links">
-      <a href="index.html">Acceuil</a>
-      <a href="menu.html">Menu</a>
-      <a href="reservation.html" class="active">Reservation</a>
-      <a href="gallery.html">Galerie</a>
-      <a href="about.html">A propos</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="restaurant-info">
-      <span class="location-icon">📍</span>
-      <span>Notre Restaurant</span>
-    </div>
-  </header>
+  <!-- Desktop Header -->
+  <div class="desktop-header">
+    <header class="topnav">
+      <div class="logo">
+        <img src="https://i.ibb.co/GTDFJDM/t-l-chargement-7-1.png" alt="Logo">
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Acceuil</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html" class="active">Reservation</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="about.html">A propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="restaurant-info">
+        <span class="location-icon">📍</span>
+        <span>Notre Restaurant</span>
+      </div>
+    </header>
+  </div>
+
+<!-- Top Navigation Menu -->
+<div class="mobile-topnav">
+  <div class="logo">
+    <img src="public/images/logo.png" alt="Logo">
+  </div>
+  <div id="mobile-links" class="mobile-links">
+    <a href="index.html">Acceuil</a>
+    <a href="menu.html">Menu</a>
+    <a href="reservation.html" class="active">Reservation</a>
+    <a href="gallery.html">Galerie</a>
+    <a href="about.html">A propos</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="mobile-icon" onclick="myFunction()">
+      <img src="public/images/menu_icon.png" alt="Centered Image">
+  </a>
+</div>
 
   <div class="backgroundImage"></div>
 
@@ -68,6 +89,6 @@
       <h6>@ Le Bon Goût Paris - 2024 | designed by Kilian Junker</h6>
     </div>
   </footer>
-
+  <script src="public/scripts.js"></script>
 </body>
 </html>
